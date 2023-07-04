@@ -16,7 +16,7 @@ def cctv():
     height = video.get(4)
     print("Video Resoultion is set to ",width,'x',height)
     print("Help-- \n1.Press esc key to exit. \n2.press m to minimize.")
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    fourcc = cv2.VideoWriter_fourcc(*'MP4V')
     date_time = time.strftime("recording %H-%M-%d -%m -%y")
     output = cv2.VideoWriter('footages/'+date_time+'.mp4',fourcc,20.0,(640,480))
     while video.isOpened():
